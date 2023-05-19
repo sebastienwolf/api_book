@@ -13,7 +13,7 @@ class ApiController extends AbstractController
 /**
   * @Route("/api/spot/{spot}", name="spot_api", methods={"GET"})
  */
-    #[Route('/api/spot/{spot}', name: 'spot_api')]
+    #[Route('/api/spot/{spot}', name: 'spots_api')]
     public function getSpot($spot): Response
     {
         $data = json_decode('[
