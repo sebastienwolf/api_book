@@ -90,30 +90,59 @@ class ApiController extends AbstractController
     {
         $data = json_decode('[
             {
-              "id": "1",
-              "auteur": "John Doe",
-              "name": "The Great Book",
-              "id_spot" : "1"
+            "id": "1",
+            "auteur": "John Smith",
+            "name": "Mystic Journey",
+            "id_spot": "2"
             },
             {
-              "id": "2",
-              "auteur": "Jane Smith",
-              "name": "Fantastic Adventures",
-              "id_spot" : "1"
+            "id": "2",
+            "auteur": "Sarah Johnson",
+            "name": "Whispering Shadows",
+            "id_spot": "1"
             },
             {
-              "id": "3",
-              "auteur": "James Johnson",
-              "name": "Mystery Unveiled",
-              "id_spot" : "2"
+            "id": "3",
+            "auteur": "Michael Brown",
+            "name": "Ethereal Essence",
+            "id_spot": "3"
             },
             {
-              "id": "4",
-              "auteur": "Emily Davis",
-              "name": "The Enigma",
-              "id_spot" : ""
-            }
-          ]', true);
+            "id": "5",
+            "auteur": "Jessica Anderson",
+            "name": "Silent Serenade",
+            "id_spot": "4"
+            },
+            {
+            "id": "6",
+            "auteur": "David Wilson",
+            "name": "Enchanted Whispers",
+            "id_spot": "1"
+            },
+            {
+            "id": "7",
+            "auteur": "Sophia Lee",
+            "name": "Veiled Harmony",
+            "id_spot": "2"
+            },
+            {
+            "id": "8",
+            "auteur": "Daniel Taylor",
+            "name": "Mystical Rhapsody",
+            "id_spot": ""
+            },
+            {
+            "id": "9",
+            "auteur": "Olivia Martinez",
+            "name": "Lost Melody",
+            "id_spot": ""
+            },
+            {
+            "id": "10",
+            "auteur": "Ethan Davis",
+            "name": "Echoes of Twilight",
+            "id_spot": ""
+            }]', true);
 
         $desiredId = $livre;
         $desiredObject = null;
