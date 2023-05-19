@@ -56,7 +56,7 @@ class ApiController extends AbstractController
         }
     }
 
-    #[Route('/api/spot/', name: 'spot_api')]
+    #[Route('/api/spot/', name: 'spots_api')]
     public function getAllSpot(): Response
     {
         $data = json_decode('[
