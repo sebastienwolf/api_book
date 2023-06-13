@@ -239,7 +239,7 @@ class ApiController extends AbstractController
     }
 
     #[Route('/api/livres/spots/{spot}', name: 'livres_spot_api')]
-    public function getLivresOnSpot($livre): Response
+    public function getLivresOnSpot($spot): Response
     {
         $data = json_decode('[
             {
@@ -249,7 +249,7 @@ class ApiController extends AbstractController
                 "available_at": "true",
                 "id_spot": "2",
                 "resume": "Un récit captivant rempli d\'aventures mystérieuses et de découvertes surprenantes. Suivez le protagoniste dans son voyage épique à travers des terres inconnues.",
-                "image": "http://exemple.com/images/mystic_journey.jpg",
+                "image": "https://static.fnac-static.com/multimedia/Images/FR/NR/85/6f/5c/6057861/1507-0/tsp20171221035904/Mystic-Journey.jpg",
                 "created_at": "2023-05-13 10:30:00",
                 "updated_at": "2023-05-13 15:45:00"
               },
@@ -260,7 +260,7 @@ class ApiController extends AbstractController
                 "available_at": "true",
                 "id_spot": "1",
                 "resume": "Un thriller sombre et palpitant qui plonge le lecteur dans l\'obscurité des ombres murmures. Préparez-vous à être transporté dans un monde rempli de mystères et de secrets inavoués.",
-                "image": "http://exemple.com/images/whispering_shadows.jpg",
+                "image": "https://static.fnac-static.com/multimedia/Images/FR/NR/29/f7/5f/6289193/1507-0/tsp20170808230647/Whispering-Shadows.jpg",
                 "created_at": "2023-05-13 10:30:00",
                 "updated_at": "2023-05-13 15:45:00"
               },
@@ -271,7 +271,7 @@ class ApiController extends AbstractController
                 "available_at": "true",
                 "id_spot": "3",
                 "resume": "Une histoire envoûtante qui explore les liens entre le monde réel et le monde des esprits. Plongez dans un univers où la frontière entre réalité et magie s\'estompe.",
-                "image": "http://exemple.com/images/ethereal_essence.jpg",
+                "image": "https://m.media-amazon.com/images/I/41mUgUeJo-L._SX311_BO1,204,203,200_.jpg",
                 "created_at": "2023-05-13 10:30:00",
                 "updated_at": "2023-05-13 15:45:00"
               },
@@ -282,7 +282,7 @@ class ApiController extends AbstractController
                 "available_at": "true",
                 "id_spot": "4",
                 "resume": "Une histoire émouvante de l\'amour et de la musique qui transcende les barrières du silence. Laissez-vous porter par les mélodies douces et les émotions profondes de ce récit captivant.",
-                "image": "http://exemple.com/images/silent_serenade.jpg",
+                "image": "https://static.fnac-static.com/multimedia/Images/FR/NR/c8/42/8a/9061064/1507-1/tsp20170921090055/Two-Dialogues-with-Postscript-Serenade-Farewell-Serenade-Silent-Music.jpg",
                 "created_at": "2023-05-13 10:30:00",
                 "updated_at": "2023-05-13 15:45:00"
               },
@@ -293,7 +293,7 @@ class ApiController extends AbstractController
                 "available_at": "true",
                 "id_spot": "1",
                 "resume": "Un conte enchanteur rempli de magie et de mystère. Découvrez un monde où les chuchotements des fées et des créatures fantastiques éveillent l\'imagination.",
-                "image": "http://exemple.com/images/enchanted_whispers.jpg",
+                "image": "https://m.media-amazon.com/images/P/1420872842.01._SCLZZZZZZZ_SX500_.jpg",
                 "created_at": "2023-05-13 10:30:00",
                 "updated_at": "2023-05-13 15:45:00"
               },
@@ -304,7 +304,7 @@ class ApiController extends AbstractController
                 "available_at": "true",
                 "id_spot": "2",
                 "resume": "Une romance passionnante qui explore les défis et les obstacles auxquels sont confrontés deux âmes liées par une harmonie voilée. Plongez dans un tourbillon d\'émotions et de dilemmes amoureux.",
-                "image": "http://exemple.com/images/veiled_harmony.jpg",
+                "image": "https://m.media-amazon.com/images/I/51yPBGhNuLL._SX314_BO1,204,203,200_.jpg",
                 "created_at": "2023-05-13 10:30:00",
                 "updated_at": "2023-05-13 15:45:00"
               },
@@ -315,7 +315,7 @@ class ApiController extends AbstractController
                 "available_at": "false",
                 "id_spot": "",
                 "resume": "Une symphonie magique qui transporte le lecteur dans un monde de mélodies envoûtantes et de magie inexplicable. Plongez dans les profondeurs de cette rhapsodie mystique.",
-                "image": "http://exemple.com/images/mystical_rhapsody.jpg",
+                "image": "https://static.fnac-static.com/multimedia/Images/FR/MC/a5/22/20/35660453/1507-1/tsp20180803071553/Death-Comes-To-The-Deconstructionist.jpg#bf8ba011-1b6d-4929-838f-fafeabd0abaa",
                 "created_at": "2023-05-13 10:30:00",
                 "updated_at": "2023-05-13 15:45:00"
               },
@@ -326,7 +326,7 @@ class ApiController extends AbstractController
                 "available_at": "false",
                 "id_spot": "",
                 "resume": "Une quête émotionnelle à la recherche d\'une mélodie perdue qui détient le pouvoir de guérir les âmes brisées. Suivez les pas de l\'héroïne dans sa recherche de rédemption.",
-                "image": "http://exemple.com/images/lost_melody.jpg",
+                "image": "https://m.media-amazon.com/images/I/41vIrsMmrvL.jpg",
                 "created_at": "2023-05-13 10:30:00",
                 "updated_at": "2023-05-13 15:45:00"
               },
@@ -337,7 +337,7 @@ class ApiController extends AbstractController
                 "available_at": "true",
                 "id_spot": "2",
                 "resume": "Des échos mystérieux de crépuscule qui résonnent à travers les pages de ce roman envoûtant. Plongez dans l\'atmosphère magique où les secrets du passé se mêlent au présent.",
-                "image": "http://exemple.com/images/echoes_of_twilight.jpg",
+                "image": "https://m.media-amazon.com/images/I/51SSWEkja2L._SX346_BO1,204,203,200_.jpg",
                 "created_at": "2023-05-13 10:30:00",
                 "updated_at": "2023-05-13 15:45:00"
               }]', true);
