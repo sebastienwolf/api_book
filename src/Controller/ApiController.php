@@ -348,7 +348,6 @@ class ApiController extends AbstractController
         foreach ($data as $item) {
             if ($item['id_spot'] === $desiredId && $item['available_at'] ) {
                 $desiredObject = $item;
-                break;
             }
         }
 
