@@ -343,16 +343,16 @@ class ApiController extends AbstractController
               }]', true);
 
         $desiredId = $spot;
-        $desiredObject = null;
+        $desiredBooks = [];
 
         foreach ($data as $item) {
-            if ($item['id_spot'] === $desiredId && $item['available_at'] ) {
-                $desiredObject = $item;
+            if ($item['id_spot'] === $desiredId && $item['available_at']) {
+                $desiredBooks[] = $item;
             }
         }
 
-        if ($desiredObject !== null) {
-            return new JsonResponse($desiredObject);
+        if ($desiredBooks !== null) {
+            return new JsonResponse($desiredBooks);
         } else {
             return new JsonResponse(['message' => "Aucun User avec l'ID $desiredId n'a été trouvé."], 404);
         }
